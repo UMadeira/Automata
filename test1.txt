@@ -2,5 +2,11 @@ automata noname
 
 state 0
 
-state 1
+	E Goto 1
 
+state 1
+	
+	E Goto 1
+	T Goto 2
+
+state 2

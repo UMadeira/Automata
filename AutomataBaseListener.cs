@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from Automata.g4 by ANTLR 4.13.0
+// Generated from .\Automata.g4 by ANTLR 4.13.0
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -71,6 +71,42 @@ public partial class AutomataBaseListener : IAutomataListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	public virtual void ExitState([NotNull] AutomataParser.StateContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AutomataParser.actions"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterActions([NotNull] AutomataParser.ActionsContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AutomataParser.actions"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitActions([NotNull] AutomataParser.ActionsContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AutomataParser.action"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterAction([NotNull] AutomataParser.ActionContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AutomataParser.action"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitAction([NotNull] AutomataParser.ActionContext context) { }
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AutomataParser.goto"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void EnterGoto([NotNull] AutomataParser.GotoContext context) { }
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AutomataParser.goto"/>.
+	/// <para>The default implementation does nothing.</para>
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	public virtual void ExitGoto([NotNull] AutomataParser.GotoContext context) { }
 
 	/// <inheritdoc/>
 	/// <remarks>The default implementation does nothing.</remarks>

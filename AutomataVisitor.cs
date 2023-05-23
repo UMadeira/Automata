@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from Automata.g4 by ANTLR 4.13.0
+// Generated from .\Automata.g4 by ANTLR 4.13.0
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -49,4 +49,22 @@ public interface IAutomataVisitor<Result> : IParseTreeVisitor<Result> {
 	/// <param name="context">The parse tree.</param>
 	/// <return>The visitor result.</return>
 	Result VisitState([NotNull] AutomataParser.StateContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="AutomataParser.actions"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitActions([NotNull] AutomataParser.ActionsContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="AutomataParser.action"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitAction([NotNull] AutomataParser.ActionContext context);
+	/// <summary>
+	/// Visit a parse tree produced by <see cref="AutomataParser.goto"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	/// <return>The visitor result.</return>
+	Result VisitGoto([NotNull] AutomataParser.GotoContext context);
 }

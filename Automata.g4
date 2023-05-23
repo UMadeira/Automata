@@ -6,7 +6,18 @@ specification: 'automata' IDENTIFIER states;
 
 states: state | state states;
 
-state: 'state' NUMBER;
+state: 'state' NUMBER actions;
+
+actions		: 
+			| action actions
+			;
+
+action		: goto
+			;
+
+goto		: LETTER 'Goto' NUMBER
+			;
+
 
 // Lexer Rule
 

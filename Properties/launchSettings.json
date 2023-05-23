@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Automata": {
+      "commandName": "Project",
+      "commandLineArgs": "test1.txt"
+    }
+  }
+}

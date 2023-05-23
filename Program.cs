@@ -23,10 +23,8 @@ var tokens = new CommonTokenStream( lexer );
 var parser = new AutomataParser( tokens );
 parser.BuildParseTree = true;
 
-var tree = parser.specification();
-
 var visitor = new GraphGenerator();
-var graph = visitor.Visit( tree );
+var graph = visitor.Visit( parser.specification() );
 
 var filename = $"{Path.GetFileNameWithoutExtension(args[0])}.viz";
 File.WriteAllText( filename, graph );

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generated from Automata.g4 by ANTLR 4.13.0
+// Generated from .\Automata.g4 by ANTLR 4.13.0
 
 // Unreachable code detected
 #pragma warning disable 0162
@@ -60,4 +60,34 @@ public interface IAutomataListener : IParseTreeListener {
 	/// </summary>
 	/// <param name="context">The parse tree.</param>
 	void ExitState([NotNull] AutomataParser.StateContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AutomataParser.actions"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterActions([NotNull] AutomataParser.ActionsContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AutomataParser.actions"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitActions([NotNull] AutomataParser.ActionsContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AutomataParser.action"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterAction([NotNull] AutomataParser.ActionContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AutomataParser.action"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitAction([NotNull] AutomataParser.ActionContext context);
+	/// <summary>
+	/// Enter a parse tree produced by <see cref="AutomataParser.goto"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void EnterGoto([NotNull] AutomataParser.GotoContext context);
+	/// <summary>
+	/// Exit a parse tree produced by <see cref="AutomataParser.goto"/>.
+	/// </summary>
+	/// <param name="context">The parse tree.</param>
+	void ExitGoto([NotNull] AutomataParser.GotoContext context);
 }

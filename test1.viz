@@ -1,0 +1,4 @@
+digraph automata {
+rankdir=LR;
+margin=1;
+}
